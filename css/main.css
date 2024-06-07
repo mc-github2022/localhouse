@@ -8,19 +8,14 @@
   --primary-color: #12a09a;
 }
 
-/* @font-face {
-  font-family: "Motter Corpus Std";
-  src: url("/font/Motter\ Corpus\ Std.woff");
-} */
-
 @font-face {
-  font-family: "Motter Corpus Std Condensed";
-  src: url("/font/Motter-Corpus-Std-SemiCondensed.woff");
+  font-family: "Motter Corpus Std", sans-serif;
+  src: url("/font/Motter\ Corpus\ Std\ Regular.woff2");
 }
 
 @font-face {
   font-family: "Always In My Heart", sans-serif;
-  src: url("/font/Always\ In\ My\ Heart.woff");
+  src: url("Always\ In\ My\ Heart.woff");
 }
 
 html {
@@ -30,10 +25,11 @@ html {
 
 p {
   margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .fontMotter {
-  font-family: "Motter Corpus Std Condensed";
+  font-family: "Motter Corpus Std", sans-serif;
   font-weight: 900;
 }
 
@@ -46,12 +42,6 @@ p {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-/* @media screen and (max-width: 1199px) {
-  .container {
-    padding: 0 20px;
-  }
-} */
 
 .landing {
   height: 100vh;
@@ -106,9 +96,18 @@ p {
   border-radius: 10px 5px 10px 5px;
 }
 
+.gap-3 {
+  gap: 3rem;
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .sectionPadding {
@@ -137,4 +136,58 @@ p {
 
 .text-center {
   text-align: center;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.menuItem {
+  position: relative;
+  width: 300px;
+  height: 419px;
+  background-color: #202221;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.menuText {
+  color: white;
+}
+
+.menuItem img {
+  position: absolute;
+  transform: translate(-50%, 0);
+  top: 60px;
+  left: 50%;
+  transition: 0.3s ease-in-out;
+  display: block;
+  width: 400px;
+}
+
+.menuItem:hover img {
+  transform: translate(-200px, 270px);
+  width: 200px;
+  transition: 0.3s ease-in-out;
+  top: 0;
+}
+
+.menuText h2 {
+  font-size: 2rem;
+}
+
+.menuText {
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
+.menuItem:hover .menuText {
+  opacity: 1;
+  transition: 0.3s ease;
+  transition-delay: 0.2s;
 }

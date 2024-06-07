@@ -33,10 +33,43 @@
 
 <section class="flavors sectionPadding text-center">
     <div class="container">
-            <h3 class="fontMotter clamp-2">A journey through</h3>
-            <h2 class="text-primary fontMotter clamp-4">THE LOCAL HOUSE CAFE</h2>
-            <h3 class="fontMotter clamp-2">flavors</h3>
+        <h3 class="fontMotter clamp-2">A journey through</h3>
+        <h2 class="text-primary fontMotter clamp-4">THE LOCAL HOUSE CAFE</h2>
+        <h3 class="fontMotter clamp-2 mb-6">flavors</h3>
+        <div class="wrapper grid-3 gap-3">
+            <div class="menuItem">
+                <div class="menuText">
+                    <h2 class="mb-1">Lunch & <br> Dinner</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam vitae iure ab, accusamus eveniet facere fugiat voluptas aliquid, accusantium ullam reiciendis quod odit eius illum facilis neque. Soluta, delectus perspiciatis!
+                    </p>
+                </div>
+                <img src="http://localhost/thelocalhouse/wp-content/uploads/2024/06/freepik-export-20240603230505bHYG-1.png" alt="">
+            </div>
+            <div class="menuItem">
+                <div class="menuText fontMotter">
+                    <h2 class="mb-1">Breakfast</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam vitae iure ab, accusamus eveniet facere fugiat voluptas aliquid, accusantium ullam reiciendis quod odit eius illum facilis neque. Soluta, delectus perspiciatis!
+                    </p>
+                </div>
+                <img src="http://localhost/thelocalhouse/wp-content/uploads/2024/06/delicious-ingredients-keto-diet-1.png" alt="">
+            </div>
+            <div class="menuItem">
+                <div class="menuText fontMotter">
+                    <h2 class="mb-1">The Local Bar</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam vitae iure ab, accusamus eveniet facere fugiat voluptas aliquid, accusantium ullam reiciendis quod odit eius illum facilis neque. Soluta, delectus perspiciatis!
+                    </p>
+                </div>
+                <img src="http://localhost/thelocalhouse/wp-content/uploads/2024/06/glass-cocktail-with-shaker-copy-space-1-e1717731557172.png" alt="">
+            </div>
+        </div>
     </div>
 </section>
+
+
+
+
 
 <?php get_footer(); ?>
