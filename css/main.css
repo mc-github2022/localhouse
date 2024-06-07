@@ -8,16 +8,6 @@
   --primary-color: #12a09a;
 }
 
-@font-face {
-  font-family: "Motter Corpus Std", sans-serif;
-  src: url("/font/Motter\ Corpus\ Std\ Regular.woff2");
-}
-
-@font-face {
-  font-family: "Always In My Heart", sans-serif;
-  src: url("Always\ In\ My\ Heart.woff");
-}
-
 html {
   font-size: 16px;
   font-family: "Roboto Slab", serif;
@@ -29,12 +19,23 @@ p {
 }
 
 .fontMotter {
-  font-family: "Motter Corpus Std", sans-serif;
-  font-weight: 900;
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .fontAllHeart {
-  font-family: "Always In My Heart", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .container {
@@ -53,6 +54,8 @@ p {
 
 .mainLogo {
   max-width: 500px;
+  position: relative;
+  z-index: 1;
 }
 
 @media screen and (max-width: 560px) {
@@ -94,12 +97,15 @@ p {
   background-color: var(--primary-color);
   text-decoration: none;
   border-radius: 10px 5px 10px 5px;
+  display: inline-block;
 }
 
 .gap-3 {
   gap: 3rem;
 }
-
+.gap-1 {
+  gap: 1rem;
+}
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -134,15 +140,24 @@ p {
   color: var(--primary-color);
 }
 
+.relative {
+  position: relative;
+}
+
 .text-center {
   text-align: center;
 }
-
+.mt-6 {
+  margin-top: 6rem;
+}
 .mb-6 {
   margin-bottom: 6rem;
 }
 .mb-2 {
   margin-bottom: 2rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
 }
 .mb-1 {
   margin-bottom: 1rem;
@@ -190,4 +205,83 @@ p {
   opacity: 1;
   transition: 0.3s ease;
   transition-delay: 0.2s;
+}
+.contactNum {
+  font-size: 4rem;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  color: rgb(63, 63, 63);
+}
+
+.theForm {
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid rgb(211, 211, 211);
+}
+
+.input {
+  margin: 10px 0;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.input label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: white;
+  padding: 0 0.5rem;
+  font-size: 13px;
+}
+
+textarea {
+  width: 100%;
+}
+
+input[type="submit"] {
+  border: none;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+footer img {
+  display: block;
+  width: 150px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+footer i {
+  color: white;
+  margin: 0 5px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-family: ;
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.footerNav a {
+  margin: 0 10px;
 }
